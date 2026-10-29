@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
-// 获取运算符索引（摘自你的实验指导书）
+// 获取运算符索引
 int getIndex(char theta) {
     int index = 0;
     switch (theta) {
@@ -20,7 +20,7 @@ int getIndex(char theta) {
     return index;
 }
 
-// 获取优先级（摘自你的实验指导书）
+// 获取优先级
 char getPriority(char theta1, char theta2) {
     const char priority[][7] = {
         { '>', '>', '<', '<', '<', '>', '>' },
