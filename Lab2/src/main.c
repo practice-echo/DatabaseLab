@@ -5,6 +5,8 @@
 int main() {
     char expr[1024]; // 假设每行表达式不超过 1024 字符
 
+    printf("请输入表达式(输入单独“=”终止):\n");
+
     // 循环读取每一行
     while (fgets(expr, sizeof(expr), stdin) != NULL) {
         // 去除 fgets 读入的换行符

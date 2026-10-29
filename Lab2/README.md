@@ -79,22 +79,14 @@ text
 
 ### 编译指令
 
-在终端中，确保所有文件在同一目录下，使用 `gcc` 进行联合编译：
-
-bash
-
-```
-gcc main.c stack.c expression.c -o calc
-```
-
-
+用vscode配置编译
 
 ### 运行程序
 
-bash
+cmd
 
 ```
-./calc
+./main.exe
 ```
 
 
@@ -121,10 +113,6 @@ text
 4
 40
 ```
-
-
-
-
 
 
 
