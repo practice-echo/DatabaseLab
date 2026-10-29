@@ -2,8 +2,17 @@
 #include <string.h>
 #include "expression.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 int main() {
     char expr[1024]; // 假设每行表达式不超过 1024 字符
+
+    #ifdef _WIN32
+    SetConsoleOutputCP(65001);   // 输出用 UTF-8
+    SetConsoleCP(65001);         // 输入也用 UTF-8
+    #endif
 
     printf("请输入表达式(输入单独“=”终止):\n");
 
